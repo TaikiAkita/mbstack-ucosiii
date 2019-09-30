@@ -105,6 +105,7 @@ void MBBufFetcher_Initialize(
 }
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_Reset()
@@ -142,8 +143,10 @@ void MBBufFetcher_Reset(
     /*  No error.  */
     *p_error = MB_ERROR_NONE;
 }
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_IsEnded()
@@ -183,8 +186,10 @@ CPU_BOOLEAN MBBufFetcher_IsEnded(
         return DEF_NO;
     }
 }
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_GetCursor()
@@ -221,8 +226,10 @@ CPU_SIZE_T MBBufFetcher_GetCursor(
 
     return p_fetcher->cursor;
 }
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_SetCursor()
@@ -276,6 +283,7 @@ void MBBufFetcher_SetCursor(
     /*  No error.  */
     *p_error = MB_ERROR_NONE;
 }
+#endif
 
 
 /*
@@ -384,6 +392,7 @@ CPU_INT16U  MBBufFetcher_ReadUInt16BE(
 }
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt16LE()
@@ -436,8 +445,10 @@ CPU_INT16U  MBBufFetcher_ReadUInt16LE(
 
     return value;
 }
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt32BE()
@@ -494,8 +505,10 @@ CPU_INT32U  MBBufFetcher_ReadUInt32BE(
 
     return value;
 }
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt32LE()
@@ -552,6 +565,7 @@ CPU_INT32U  MBBufFetcher_ReadUInt32LE(
 
     return value;
 }
+#endif
 
 
 /*

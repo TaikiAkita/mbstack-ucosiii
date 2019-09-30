@@ -87,6 +87,7 @@ void MBBufFetcher_Initialize(
 );
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_Reset()
@@ -110,8 +111,10 @@ void MBBufFetcher_Reset(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_IsEnded()
@@ -134,8 +137,10 @@ CPU_BOOLEAN MBBufFetcher_IsEnded(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_GetCursor()
@@ -159,8 +164,10 @@ CPU_SIZE_T MBBufFetcher_GetCursor(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_SetCursor()
@@ -187,6 +194,7 @@ void MBBufFetcher_SetCursor(
     CPU_SIZE_T          cursor,
     MB_ERROR           *p_error
 );
+#endif
 
 
 /*
@@ -239,6 +247,7 @@ CPU_INT16U  MBBufFetcher_ReadUInt16BE(
 );
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt16LE()
@@ -262,8 +271,10 @@ CPU_INT16U  MBBufFetcher_ReadUInt16LE(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt32BE()
@@ -287,8 +298,10 @@ CPU_INT32U  MBBufFetcher_ReadUInt32BE(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufFetcher_ReadUInt32LE()
@@ -312,6 +325,7 @@ CPU_INT32U  MBBufFetcher_ReadUInt32LE(
     MB_BUFFERFETCHER  *p_fetcher,
     MB_ERROR          *p_error
 );
+#endif
 
 
 #ifdef __cplusplus

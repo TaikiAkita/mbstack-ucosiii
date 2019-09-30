@@ -141,7 +141,6 @@ void MBBufEmitter_WriteUInt8(
 );
 
 
-
 /*
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt16BE()
@@ -169,7 +168,7 @@ void MBBufEmitter_WriteUInt16BE(
 );
 
 
-
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt16LE()
@@ -195,9 +194,10 @@ void MBBufEmitter_WriteUInt16LE(
     CPU_INT16U        value,
     MB_ERROR          *p_error
 );
+#endif
 
 
-
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt32BE()
@@ -223,9 +223,10 @@ void MBBufEmitter_WriteUInt32BE(
     CPU_INT32U        value,
     MB_ERROR          *p_error
 );
+#endif
 
 
-
+#if 0
 /*
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt32LE()
@@ -251,7 +252,7 @@ void MBBufEmitter_WriteUInt32LE(
     CPU_INT32U        value,
     MB_ERROR          *p_error
 );
-
+#endif
 
 
 /*
