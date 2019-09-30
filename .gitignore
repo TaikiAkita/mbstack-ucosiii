@@ -1,0 +1,15 @@
+#
+#  .gitignore file.
+#
+#  (C) 2019 XiaoJSoft Studio. All rights reserved.
+#
+
+/Internal/
+/.vscode/
+
+*.o
+*.bin
+*.elf
+*.hex
+*.ihex
+*.bak

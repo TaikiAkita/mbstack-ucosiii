@@ -1,0 +1,124 @@
+/*
+*********************************************************************************************************
+*                                          MODBUS COMMUNICATION
+*                                         CONFIGURATION TEMPLATE
+*
+*
+*                           (c) Copyright 2019; XiaoJSoft Studio.;
+*                    All rights reserved.  Protected by international copyright laws.
+*
+* File      : APP_CFG.H.TMPL
+* Version   : V1.0.320
+* By        : Ji WenCong
+*
+* Note(s)   : (1) The copyright notice above is ONLY applied to this file, but not applied to your 
+*                 <app_cfg.h> file.
+*             (2) Copy the content of the content of this file (except this comment block) to your 
+*                 <app_cfg.h> file and configure the setting lines properly.
+*********************************************************************************************************
+*/
+
+/*
+*********************************************************************************************************
+*                                         MODBUS COMMUNICATION
+*
+* Note(s) : (1) MB_CFG_MAX_NBR_IF must be larger than 0u and not greater than 255u.
+*
+*           (2) Disable MB_CFG_ARG_CHK_EN if extended argument checking functionality is not needed.
+*
+*           (3) Disable MB_CFG_SLAVE_EN if Modbus slave functionality is not needed.
+*
+*           (4) If the device RAM space is highly restricted, set MB_CFG_SLAVE_CMDTABLE_COMPACT_EN to DEF_ENABLED.
+*
+*           (5) MB_CFG_SLAVE_CMDTABLE_COMPACT_TBLLEN determines the size of a slave command table in 
+*               compact mode.
+*
+*           (6) Enable used built-in slave command and disable other commands to optimize code size.
+*
+*           (7) Disable optional functions provided by 'mbslave.c' to optimize code size.
+*
+*           (8) Disable optional features provided by 'mbslave.c' to optimize code size.
+*
+*           (9) Disable optional counters provided by 'mbslave.c' to optimize code size.
+*
+*           (10) Disable MB_CFG_MASTER_EN if Modbus master functionality is not needed.
+*
+*           (11) Enable used built-in master command and disable other commands to optimize code size.
+*
+*           (12) Disable optional counters provided by 'mbcore.c' to optimize code size.
+*
+*           (13) Disable optional functions provided by 'mbcore.c' to optimize code size.
+*
+*           (14) Disable RTU transmission mode if it is not needed.
+*
+*           (15) Disable ASCII transmission mode if it is not needed.
+*********************************************************************************************************
+*/
+
+#define MB_CFG_MAX_NBR_IF                                            4U      /* See Note #1.                                    */
+
+#define MB_CFG_ARG_CHK_EN                                   DEF_ENABLED      /* See Note #2.                                    */
+
+#define MB_CFG_SLAVE_EN                                     DEF_ENABLED      /* See Note #3.                                    */
+
+#define MB_CFG_SLAVE_CMDTABLE_COMPACT_EN                    DEF_ENABLED      /* See Note #4.                                    */
+#define MB_CFG_SLAVE_CMDTABLE_COMPACT_TABLELEN                      16U      /* See Note #5.                                    */
+
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_READCOILS               DEF_ENABLED      /* See Note #6.                                    */
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_READDISCRETEINPUTS      DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_READHOLDINGREGS         DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_READINPUTREGS           DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_WRITESINGLECOIL         DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_WRITESINGLEREG          DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_WRITEMULTIPLECOILS      DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_WRITEMULTIPLEREGS       DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_MASKWRITEREG            DEF_ENABLED
+#define MB_CFG_SLAVE_BUILTIN_CMDLET_READWRITEMULTIPLEREGS   DEF_ENABLED
+
+#define MB_CFG_SLAVE_GETPREVIOUSFRAMEFLAGS_EN               DEF_ENABLED      /* See Note #7.                                    */
+#define MB_CFG_SLAVE_GETLASTFRAMEFLAGS_EN                   DEF_ENABLED
+#define MB_CFG_SLAVE_GETLASTERROR_EN                        DEF_ENABLED
+#define MB_CFG_SLAVE_GETCOUNTERVALUE_EN                     DEF_ENABLED
+#define MB_CFG_SLAVE_CLEARCOUNTERVALUE_EN                   DEF_ENABLED
+
+#define MB_CFG_SLAVE_DELAYBEFOREREPLY_EN                    DEF_ENABLED      /* See Note #8.                                    */
+#define MB_CFG_SLAVE_LISTENONLY_EN                          DEF_ENABLED
+
+#define MB_CFG_SLAVE_BUSMESSAGECOUNTER_EN                   DEF_ENABLED      /* See Note #9.                                    */
+#define MB_CFG_SLAVE_BUSCOMMERRORCOUNTER_EN                 DEF_ENABLED
+#define MB_CFG_SLAVE_SLAVEMESSAGECOUNTER_EN                 DEF_ENABLED
+#define MB_CFG_SLAVE_SLAVEEXCEPTIONCOUNTER_EN               DEF_ENABLED
+#define MB_CFG_SLAVE_SLAVENORESPONSECOUNTER_EN              DEF_ENABLED
+
+#define MB_CFG_MASTER_EN                                    DEF_ENABLED      /* See Note #10.                                   */
+
+#define MB_CFG_MASTER_BUILTIN_CMDLET_READCOILS_EN           DEF_ENABLED      /* See Note #11.                                   */
+#define MB_CFG_MASTER_BUILTIN_CMDLET_READDISCRETEINPUTS_EN  DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_READHOLDREGS_EN        DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_READINPUTREGS_EN       DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_WRITESINGLEREG         DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_WRITESINGLECOIL        DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_WRITEMULTIPLECOILS     DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_WRITEMULTIPLEREGS      DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_MASKWRITEREG           DEF_ENABLED
+#define MB_CFG_MASTER_BUILTIN_CMDLET_RWMULTIPLEREGS         DEF_ENABLED
+
+#define MB_CFG_CORE_PARITYERRORCOUNTER_EN                   DEF_ENABLED      /* See Note #12.                                   */
+#define MB_CFG_CORE_DATAOVERRUNERRORCOUNTER_EN              DEF_ENABLED
+#define MB_CFG_CORE_FRAMEERRORCOUNTER_EN                    DEF_ENABLED
+
+#define MB_CFG_CORE_SETMODE_EN                              DEF_ENABLED      /* See Note #13.                                   */
+#define MB_CFG_CORE_GETMODE_EN                              DEF_ENABLED
+#define MB_CFG_CORE_SETLINEFEED_EN                          DEF_ENABLED
+#define MB_CFG_CORE_GETLINEFEED_EN                          DEF_ENABLED
+#define MB_CFG_CORE_SETCHARTIMEPRESCALE_EN                  DEF_ENABLED
+#define MB_CFG_CORE_GETCHARTIMEPRESCALE_EN                  DEF_ENABLED
+#define MB_CFG_CORE_GETCOUNTERVALUE_EN                      DEF_ENABLED
+#define MB_CFG_CORE_CLEARCOUNTERVALUE_EN                    DEF_ENABLED
+#define MB_CFG_CORE_GETLASTTXADDRESS                        DEF_ENABLED
+#define MB_CFG_CORE_GETLASTTXFUNCTIONCODE                   DEF_ENABLED
+#define MB_CFG_CORE_GETLASTTXEXCEPTIONCODE                  DEF_ENABLED
+#define MB_CFG_CORE_CLEARLASTTXEXCEPTIONCODE                DEF_ENABLED
+
+#define MB_CFG_CORE_RTUMODE                                 DEF_ENABLED      /* See Note #14.                                   */
+#define MB_CFG_CORE_ASCIIMODE                               DEF_ENABLED      /* See Note #15.                                   */
