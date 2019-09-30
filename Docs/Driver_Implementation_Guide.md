@@ -1061,3 +1061,11 @@ if (Device is opened) {
 }
 ```
 
+### (File) mbdrv_usart{X}.h
+
+The header file simply exports the driver descriptor symbol:
+
+```
+extern MB_DRIVER  MBDRV_USART_DRIVERDESC;
+```
+
