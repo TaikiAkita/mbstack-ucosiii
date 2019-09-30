@@ -12,8 +12,8 @@ This software is built for [*uC/OS-III*](https://www.micrium.com/rtos/kernels/) 
 
 This software is designed to following specifications:
 
- - MODBUS over Serial Line Specification and Implementation Guide V1.02 ([*Modbus_over_serial_line_V1_02.pdf*](https://git-private.xiaojsoft.org/xeos/ucos-iii-mbstack/raw/master/Docs/Modbus_over_serial_line_V1_02.pdf))
- - MODBUS Application Protocol Specification V1.1b3 ([*Modbus_Application_Protocol_V1_1b3.pdf*](https://git-private.xiaojsoft.org/xeos/ucos-iii-mbstack/blob/master/Docs/Modbus_Application_Protocol_V1_1b3.pdf))
+ - MODBUS over Serial Line Specification and Implementation Guide V1.02 ([*Modbus_over_serial_line_V1_02.pdf*](http://www.modbus.org/docs/Modbus_over_serial_line_V1_02.pdf))
+ - MODBUS Application Protocol Specification V1.1b3 ([*Modbus_Application_Protocol_V1_1b3.pdf*](http://www.modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf))
 
 Currently, this software contains built-in support for following function codes on both Modbus Master and Slave:
 
@@ -71,5 +71,28 @@ And this software would use following hardware resources:
 
 ## Documents
 
-See "[*Docs*](https://git-private.xiaojsoft.org/xeos/ucos-iii-mbstack/tree/master/Docs)" directory for the documents.
+See *Docs* directory for the documents.
+
+## Example Projects
+
+We have an example project based on [*Arduino Mega2560 R3*](https://store.arduino.cc/usa/mega-2560-r3) board. But due to the copyright limitation, we could not distribute the project files freely. Feel free to contact us if you really need it.
+
+ - If you are a student or a researcher, and you just want to learn this project or do some peaceful research, we would provide the example project to you.
+ - If you are a geek and want to embed this software in your home-made non-commercial project, we would also provide the example project to you. 
+ - If you want to embed this software in your commercial product, you must provide us a legal license authorized by *Micrium*. After that, we would provide the example project to you.
+
+No purchase is needed for the example project.
+
+## Commercial support
+
+We provide commercial support for this software. You may contact us when:
+
+ - Need any help.
+ - Need to customize the software.
+ - Need any other techical support.
+
+## Contact us
+
+Project Leader:
+ - Ji WenCong &lt;[taiki_akita@163.com](mailto://taiki_akita@163.com)&gt;
 
