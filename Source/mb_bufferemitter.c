@@ -146,7 +146,7 @@ void MBBufEmitter_Reset(
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt8()
 *
-* Description : Write an unsigned 8-bit integer to current position of specific buffer fetcher.
+* Description : Write an unsigned 8-bit integer to current position of specific buffer emitter.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
 *               (2) value           Value to be written.
@@ -196,7 +196,7 @@ void MBBufEmitter_WriteUInt8(
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt16BE()
 *
-* Description : Write an unsigned big-endian 16-bit integer to current position of specific buffer fetcher.
+* Description : Write an unsigned big-endian 16-bit integer to current position of specific buffer emitter.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
 *               (2) value           Value to be written.
@@ -249,7 +249,7 @@ void MBBufEmitter_WriteUInt16BE(
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt16LE()
 *
-* Description : Write an unsigned little-endian 16-bit integer to current position of specific buffer fetcher.
+* Description : Write an unsigned little-endian 16-bit integer to current position of specific buffer emitter.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
 *               (2) value           Value to be written.
@@ -303,7 +303,7 @@ void MBBufEmitter_WriteUInt16LE(
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt32BE()
 *
-* Description : Write an unsigned big-endian 32-bit integer to current position of specific buffer fetcher.
+* Description : Write an unsigned big-endian 32-bit integer to current position of specific buffer emitter.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
 *               (2) value           Value to be written.
@@ -361,7 +361,7 @@ void MBBufEmitter_WriteUInt32BE(
 *********************************************************************************************************
 *                                    MBBufEmitter_WriteUInt32LE()
 *
-* Description : Write an unsigned little-endian 32-bit integer to current position of specific buffer fetcher.
+* Description : Write an unsigned little-endian 32-bit integer to current position of specific buffer emitter.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
 *               (2) value           Value to be written.
