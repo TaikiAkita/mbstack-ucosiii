@@ -265,16 +265,9 @@ void MBBufFetcher_SetCursor(
 #endif
 
     /*  Check the new cursor.  */
-    if (p_fetcher->bufferLength == (CPU_SIZE_T)0U) {
-        if (cursor != (CPU_SIZE_T)0U) {
-            *p_error = MB_ERROR_OVERFLOW;
-            return;
-        }
-    } else {
-        if (cursor >= p_fetcher->bufferLength) {
-            *p_error = MB_ERROR_OVERFLOW;
-            return;
-        }
+    if (cursor > p_fetcher->bufferLength) {
+        *p_error = MB_ERROR_OVERFLOW;
+        return;
     }
 
     /*  Set the cursor.  */
