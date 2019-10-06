@@ -287,7 +287,7 @@ void MBBufEmitter_WriteUInt16LE(
     /*  Write the value.  */
     p_emitter->buffer[p_emitter->cursor] = (CPU_INT08U)(value & (CPU_INT16U)0xFFU);
     value >>= (CPU_INT16U)8;
-    p_emitter->buffer[p_emitter->cursor + (CPU_SIZE_T)1U] = (CPU_INT08U)(value & (CPU_INT16U)0xFFU);
+    p_emitter->buffer[p_emitter->cursor + (CPU_SIZE_T)1U] = (CPU_INT08U)value;
 
     /*  Move the cursor.  */
     p_emitter->cursor += (CPU_SIZE_T)2U;
