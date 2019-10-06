@@ -455,19 +455,19 @@ CPU_SIZE_T MBBufEmitter_GetWrittenLength(
 *********************************************************************************************************
 *                                    MBBufEmitter_EnsureRemaining()
 *
-* Description : Ensure the length of remaining data of specific buffer emitter is enough to be read.
+* Description : Ensure the length of remaining buffer of specific buffer emitter is enough to be written.
 *
 * Argument(s) : (1) p_emitter       Pointer to the emitter.
-*               (2) min_length      Minimun required remaining data length.
+*               (2) min_length      Minimum required remaining buffer length.
 *               (2) p_error         Pointer to the variable that receives error code from this function:
 *
 *                                       MB_ERROR_NONE                  No error occurred.
-*                                       MB_ERROR_NULLREFERENCE         'p_emitter' is NULL.
-*                                       MB_ERROR_BUFEMITTER_BUFFEREND  Length of remaining data is shorter than 'min_length'.
+*                                       MB_ERROR_BUFEMITTER_BUFFEREND  Length of remaining buffer is shorter than 'min_length'.
 *
 * Return(s)   : None.
 *
 * Note(s)     : (1) This function is NOT thread(task)-safe.
+*               (2) 'p_emitter' is assumed to be not NULL.
 *********************************************************************************************************
 */
 

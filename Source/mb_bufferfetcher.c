@@ -575,16 +575,16 @@ CPU_INT32U  MBBufFetcher_ReadUInt32LE(
 * Description : Ensure the length of remaining data of specific buffer fetcher is enough to be read.
 *
 * Argument(s) : (1) p_fetcher       Pointer to the fetcher.
-*               (2) min_length      Minimun required remaining data length.
+*               (2) min_length      Minimum required remaining data length.
 *               (2) p_error         Pointer to the variable that receives error code from this function:
 *
 *                                       MB_ERROR_NONE                  No error occurred.
-*                                       MB_ERROR_NULLREFERENCE         'p_fetcher' is NULL.
 *                                       MB_ERROR_BUFFETCHER_BUFFEREND  Length of remaining data is shorter than 'min_length'.
 *
 * Return(s)   : None.
 *
 * Note(s)     : (1) This function is NOT thread(task)-safe.
+*               (2) 'p_fetcher' is assumed to be not NULL.
 *********************************************************************************************************
 */
 
