@@ -318,7 +318,7 @@ static void MBDrv_USART_DeviceOpen(
         }
     }
 
-    Create a on-board hardware timer working in periodic triggering mode and set its interval to 'halfCharTime' milliseconds. Note that the timer should stay in stopped mode after created.
+    Create a on-board hardware timer working in periodic triggering mode and set its interval to 'halfCharTime' microseconds. Note that the timer should stay in stopped mode after created.
     if (Failed to create the timer) {
         *p_error = MB_ERROR_DEVICEFAIL;
         goto MBDRV_DEVICEOPEN_EXIT;
